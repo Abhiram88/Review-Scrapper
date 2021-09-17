@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<style>
+    div.one {
+          padding: 30px;
+            }
+    p.lead {
+          text-align:center;
+          font-size: 30px;
+            }
+
+    div.side_pane{
+
+        padding: 30px;
+    }
+
+    div.input-group{
+        padding-left:40px;
+    }
+
+    div.search_button{
+        padding-left: 50px;
+
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-fluid one bg-info text-white">
+            <div class="row">
+                <div class="col-sm">
+                   <p class= 'lead'> Review Scrapper </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="col side_pane">
+               <div class="right_pane">
+                   <p class="text-justify">
+                       If you don't find the product you are looking for, kindly use the search to find the
+                       reviews.
+                   </p>
+               </div>
+
+               <div class="row side_pane">
+                  <form action='/scrapper' method = "post">
+                         <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">I am looking for</span>
+                              </div>
+                              <input type="text" class="form-control" name = 'prod' placeholder="item name" aria-label="item" aria-describedby="basic-addon1">
+                         </div>
+
+                         <div class="search_button text-left">
+                            <button type="submit" class="btn btn-primary"> search </button>
+                        </div>
+
+                  </form>
+               </div>
+           </div>
+
+</body>
+</html>

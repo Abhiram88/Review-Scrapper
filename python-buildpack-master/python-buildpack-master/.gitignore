@@ -1,0 +1,7 @@
+.bin/
+pkg/
+!vendor/**
+log/
+**/.DS_Store
+/python_buildpack-*.zip
+.idea/

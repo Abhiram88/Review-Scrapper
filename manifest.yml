@@ -1,0 +1,9 @@
+
+---
+applications:
+- name: review_scrapper_app
+  memory: 1.5GB
+  disk_quota: 1.5GB
+  random-route: true
+  path: .
+  buildpack: https://github.com/cloudfoundry/python-buildpack#
